@@ -285,7 +285,7 @@ section { position:relative; z-index:2; padding:clamp(5rem,10vw,9rem) clamp(1.25
 .hero-bio strong { color:var(--text); font-weight:500; }
 
 .hero-stats {
-  display:grid; grid-template-columns:repeat(4,1fr); gap:.75rem;
+  display:grid; grid-template-columns:repeat(3,1fr); gap:.75rem;
   margin-bottom:2.5rem; animation:fadeUp .6s 1.05s both;
 }
 .stat-card {
@@ -1247,7 +1247,6 @@ footer .copy {
   </div>
   <div class="hero-inner">
     <div class="hero-content">
-      <div class="hero-badge">Disponibilité immédiate</div>
       <h1 class="hero-name">
         <span class="line1">El Mehdi</span>
         <span class="line2">Bechnikha</span>
@@ -1268,10 +1267,9 @@ footer .copy {
       </p>
 
       <div class="hero-stats">
-        <div class="stat-card"><div class="stat-num" data-count="3">0</div><div class="stat-lbl">Ans d'exp.</div></div>
+        <div class="stat-card"><div class="stat-num" data-count="2">0</div><div class="stat-lbl">Ans d'exp.</div></div>
         <div class="stat-card"><div class="stat-num">10×</div><div class="stat-lbl">Speedup</div></div>
         <div class="stat-card"><div class="stat-num" data-count="30">0</div><div class="stat-lbl">M lignes</div></div>
-        <div class="stat-card"><div class="stat-num" data-count="5">0</div><div class="stat-lbl">Use cases IA</div></div>
       </div>
 
       <div class="hero-actions">
@@ -1307,10 +1305,6 @@ footer .copy {
         <div class="hero-info-row">
           <span class="ico">📍</span>
           <span><strong>Paris</strong>, Île-de-France</span>
-        </div>
-        <div class="hero-info-row">
-          <span class="ico">✅</span>
-          <span class="highlight">Disponibilité immédiate</span>
         </div>
         <div class="hero-info-row">
           <span class="ico">🏢</span>
@@ -1417,14 +1411,6 @@ footer .copy {
       </div>
     </div>
     <div class="impact-card reveal">
-      <div class="impact-num num-violet" data-count="5">0</div>
-      <div class="impact-label">Use cases IA déployés en production</div>
-      <div class="impact-dots">
-        <span class="impact-dot on"></span><span class="impact-dot on"></span><span class="impact-dot on"></span>
-        <span class="impact-dot on"></span><span class="impact-dot on"></span>
-      </div>
-    </div>
-    <div class="impact-card reveal">
       <div class="impact-num num-sky" data-count="30">0</div>
       <div class="impact-label">Millions de lignes traitées (CACIB analytics POC)</div>
       <div class="impact-viz">
@@ -1436,7 +1422,7 @@ footer .copy {
       </div>
     </div>
     <div class="impact-card reveal">
-      <div class="impact-num num-gold" data-count="3">0</div>
+      <div class="impact-num num-gold" data-count="2">0</div>
       <div class="impact-label">Années d'expérience IA/ML en finance</div>
       <div class="impact-viz">
         <div class="impact-bar" style="height:35px"><div class="fill f-gold"></div></div>
@@ -1444,7 +1430,7 @@ footer .copy {
         <div class="impact-bar" style="height:75px"><div class="fill f-violet"></div></div>
       </div>
     </div>
-    <div class="impact-card reveal">
+    <div class="impact-card reveal" style="grid-column:span 2">
       <div class="impact-num num-emerald">4</div>
       <div class="impact-label">Domaines IA maîtrisés — NLP, Vision, GenAI & Big Data</div>
       <div class="impact-viz">
@@ -1489,7 +1475,6 @@ footer .copy {
         <button class="chat-chip" data-id="genai">Compétences GenAI / LLM ?</button>
         <button class="chat-chip" data-id="impact">Plus gros impact mesurable ?</button>
         <button class="chat-chip" data-id="stack">Stack technique ?</button>
-        <button class="chat-chip" data-id="dispo">Disponibilité ?</button>
         <button class="chat-chip" data-id="formation">Formation & parcours ?</button>
       </div>
     </div>
@@ -1524,7 +1509,7 @@ footer .copy {
 
   <div class="about-grid">
     <div class="about-text reveal">
-      <p>Je suis <strong>Data Scientist & Data Engineer</strong> basé à Paris avec plus de 3 ans d'expérience dans la livraison de systèmes pilotés par l'IA dans des environnements financiers exigeants.</p>
+      <p>Je suis <strong>Data Scientist & Data Engineer</strong> basé à Paris avec plus de 2 ans d'expérience dans la livraison de systèmes pilotés par l'IA dans des environnements financiers exigeants.</p>
       <p>Chez <strong>AXA France</strong>, j'ai dirigé des pipelines IA de bout en bout : intelligence documentaire OCR, classification multi-labels, extraction LLM, et ingénierie PySpark à grande échelle sur Azure Databricks.</p>
       <p>Mon double parcours — <strong>Ingénieur Statistiques & Recherche Opérationnelle (INSEA)</strong> et <strong>M2 Machine Learning (Paris Cité)</strong> — me permet de relier fondements mathématiques rigoureux et logiciels de production réels.</p>
       <p>Trilingue : Français, Anglais et Arabe. Champion du Maroc de basketball. Passionné de Formule 1.</p>
@@ -1541,15 +1526,13 @@ footer .copy {
         <div class="contact-cell"><div class="lbl">LinkedIn</div><div class="val"><a href="https://linkedin.com/in/el-mehdi-bechnikha" target="_blank">/el-mehdi-bechnikha</a></div></div>
         <div class="contact-cell"><div class="lbl">Localisation</div><div class="val">Paris, Île-de-France</div></div>
         <div class="contact-cell"><div class="lbl">Langues</div><div class="val">FR · EN · AR</div></div>
-        <div class="contact-cell"><div class="lbl">Statut</div><div class="val" style="color:var(--success)">Disponibilité immédiate</div></div>
       </div>
     </div>
 
     <div class="kpi-stack reveal">
-      <div class="kpi-card"><span class="kpi-icon">⚡</span><span class="kpi-num" data-count="3">0</span><span class="kpi-desc">Années d'expérience professionnelle en IA/ML</span></div>
+      <div class="kpi-card"><span class="kpi-icon">⚡</span><span class="kpi-num" data-count="2">0</span><span class="kpi-desc">Années d'expérience professionnelle en IA/ML</span></div>
       <div class="kpi-card"><span class="kpi-icon">🚀</span><span class="kpi-num">10×</span><span class="kpi-desc">Accélération extraction de clauses chez CACIB</span></div>
       <div class="kpi-card"><span class="kpi-icon">📊</span><span class="kpi-num" data-count="30">0</span><span class="kpi-desc">Millions de lignes traitées chez CACIB</span></div>
-      <div class="kpi-card"><span class="kpi-icon">🎯</span><span class="kpi-num" data-count="5">0</span><span class="kpi-desc">Use cases IA déployés en production</span></div>
     </div>
   </div>
 </section>
@@ -1702,7 +1685,7 @@ footer .copy {
       </div>
 
       <div class="bento-card featured reveal">
-        <div class="bento-stat-num">3+</div>
+        <div class="bento-stat-num">2+</div>
         <div class="bento-stat-desc">Années d'expérience professionnelle en IA/ML</div>
       </div>
       <div class="bento-card reveal">
@@ -1793,7 +1776,7 @@ footer .copy {
 
   <div class="contact-layout">
     <div class="reveal">
-      <p class="contact-headline">Ouvert aux <em>opportunités</em> — disponibilité immédiate</p>
+      <p class="contact-headline">Ouvert aux <em>opportunités</em></p>
       <p class="contact-text">Je recherche des postes Data Scientist, Data Engineer ou ML Engineer à Paris et en remote. Si vous construisez quelque chose d'ambitieux avec l'IA, j'aimerais en discuter !</p>
       <a href="mailto:elmehdi.bechnikha@gmail.com" class="btn-primary">Envoyer un email →</a>
     </div>
@@ -2289,17 +2272,12 @@ window.addEventListener('scroll', () => {
     impact: {
       question: "Quel a été ton plus gros impact mesurable ?",
       sources: ['Impact · CACIB', 'CV · Crédit Agricole CIB', 'Metrics · 30M rows'],
-      answer: "Mon impact le plus marquant :\n\n• <strong>10× speedup</strong> chez CACIB — extraction de clauses NLP passée de <strong>1–2 semaines à 10 minutes</strong>\n• <strong>30 millions</strong> de lignes traitées dans un POC analytics prêts\n• <strong>5 use cases IA</strong> déployés en production\n• Pipeline GenAI AXA traitant des milliers de documents contractuels"
+      answer: "Mon impact le plus marquant :\n\n• <strong>10× speedup</strong> chez CACIB — extraction de clauses NLP passée de <strong>1–2 semaines à 10 minutes</strong>\n• <strong>30 millions</strong> de lignes traitées dans un POC analytics prêts\n• Pipeline GenAI AXA traitant des milliers de documents contractuels"
     },
     stack: {
       question: "Quel est ton stack technique ?",
       sources: ['Skills · Stack complet', 'CV · Technologies', 'Marquee · Tools'],
       answer: "Mon stack principal :\n\n• <strong>ML/AI</strong> : Python, Scikit-learn, TensorFlow, LightGBM, YOLOv8/v9\n• <strong>GenAI</strong> : Mistral LLM, LangChain, RAG, Surya OCR, Tesseract\n• <strong>Big Data</strong> : PySpark, Azure Databricks, SQL/NoSQL, Elasticsearch\n• <strong>MLOps</strong> : Azure DevOps, Git, Power BI, Dataiku, Streamlit\n\nPython à 96% — langage principal pour tous mes projets."
-    },
-    dispo: {
-      question: "Es-tu disponible pour un poste ?",
-      sources: ['Profil · Statut', 'Contact · Disponibilité'],
-      answer: "Oui, je suis en <strong>disponibilité immédiate</strong> 🟢\n\nJe recherche des postes <strong>Data Scientist</strong>, <strong>Data Engineer</strong> ou <strong>ML Engineer</strong> à Paris ou en remote.\n\n📍 Basé à Paris · Trilingue (FR/EN/AR)\n📧 elmehdi.bechnikha@gmail.com"
     },
     formation: {
       question: "Parle-moi de ta formation.",
@@ -2414,7 +2392,7 @@ window.addEventListener('scroll', () => {
     if (!entries[0].isIntersecting || welcomed) return;
     welcomed = true;
     setTimeout(() => {
-      addMessage('bot', "Bonjour ! Je suis l'<strong>assistant RAG</strong> d'El Mehdi. Sélectionnez une question ci-contre pour explorer son profil — expériences, compétences GenAI, impact mesurable et disponibilité.");
+      addMessage('bot', "Bonjour ! Je suis l'<strong>assistant RAG</strong> d'El Mehdi. Sélectionnez une question ci-contre pour explorer son profil — expériences, compétences GenAI et impact mesurable.");
     }, 600);
     welcomeObs.disconnect();
   }, { threshold: 0.3 });
